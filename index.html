@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+
+      <title>Modern earthquakes</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <style>
+          /*  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet"> */
+          <link href="css/fonts.css" rel="stylesheet"> 
+        </style>
+    </head>
+<body>
+
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/d3-v4.js"></script>
+<script src="js/d3-color.v1.min.js"></script>
+<script src="js/d3-interpolate.v1.min.js"></script>
+<script src="js/d3-scale-chromatic.v0.3.min.js"></script>
+<script src="js/useful_full.js"></script>
+<script src="js/scroller.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/bubble_chart.js"></script>
+<script src="js/d3-annotation.js"></script>
+<script src="js/d3-geo-projection.v1.min.js"></script>
+<script src="js/topojson.v2.min.js"></script>
+
+<div class="container">
+  <div id='graphic'>    
+    <div id='sections'>
+
+      <svg class="depthLegend horizontal visLegend" id="depthLegendH"></svg>
+      <svg class="magnitudeLegend visLegend" id="magnitudeLegend"></svg>
+      
+      <section class="step step0">
+        <div class="title title0">Large-magnitude earthquakes from the start of the 20th Century</div>
+       <p class="para para0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec fermentum mauris. Vivamus et tristique mauris, id tristique nulla. Proin efficitur eu velit id lobortis. Maecenas eu libero id est consequat mollis. Aliquam urna tellus, vestibulum eu dapibus a, ullamcorper sed tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque dapibus lobortis ipsum sed tristique. Ut tincidunt eros metus, quis ullamcorper massa tincidunt vel. Sed est libero, lacinia ut placerat eu, placerat ut nulla. Duis vel congue dui, sed tempus lorem. Morbi eleifend nisl id leo molestie cursus at vitae risus. In convallis efficitur ultrices. Nam rhoncus faucibus nunc. </p>
+      </section>
+
+      <section class="step step1">
+        <div class="title title1">A history of earthquakes through time</div>
+          <p class="para para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at pretium lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante non elit sollicitudin sollicitudin. Nulla dictum dui ut mauris ultricies, quis ultrices mauris rutrum. Maecenas diam dui, lacinia eget egestas eget, feugiat id nunc. Pellentesque porta pellentesque enim at ultrices. Vivamus sodales dolor turpis, bibendum dictum ipsum egestas vitae. Integer laoreet faucibus dui vel condimentum. Donec hendrerit odio nibh, quis vulputate orci bibendum eget. Maecenas sed fermentum augue. Maecenas ut orci vitae ligula maximus congue eu ac purus. [history distribution] </p>
+      </section>
+
+      <section class="step step2">
+        <div class="title title2">Global distribution</div>
+        <p class="para para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at pretium lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante non elit sollicitudin sollicitudin. Nulla dictum dui ut mauris ultricies, quis ultrices mauris rutrum. Maecenas diam dui, lacinia eget egestas eget, feugiat id nunc. Pellentesque porta pellentesque enim at ultrices. Vivamus sodales dolor turpis, bibendum dictum ipsum egestas vitae. Integer laoreet faucibus dui vel condimentum. Donec hendrerit odio nibh, quis vulputate orci bibendum eget. Maecenas sed fermentum augue. Maecenas ut orci vitae ligula maximus congue eu ac purus. [Global distribution] </p>
+      </section>
+
+      <section class="step step3">
+        <div class="title title3">Depth distribution</div>
+        <p class="para para3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at pretium lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod ante non elit sollicitudin sollicitudin. Nulla dictum dui ut mauris ultricies, quis ultrices mauris rutrum. Maecenas diam dui, lacinia eget egestas eget, feugiat id nunc. Pellentesque porta pellentesque enim at ultrices. Vivamus sodales dolor turpis, bibendum dictum ipsum egestas vitae. Integer laoreet faucibus dui vel condimentum. Donec hendrerit odio nibh, quis vulputate orci bibendum eget. Maecenas sed fermentum augue. Maecenas ut orci vitae ligula maximus congue eu ac purus. [Depth distribution] </p>
+      </section>
+
+    </div>
+    <div id='vis'>
+        <div id="toolbar">
+          <button id="restart" class="button restart disabled" onClick="refresh()">Restart visualisation</button>
+         <!-- <button id="view" class="button active nostory" onClick="changeView(this)">Hide information panel</button> -->
+          <button id="highlight" class="button active false" onClick="changeHighlight(this)">Show only large events</button>
+        </div>
+    </div>
+    <div id="extra-space">
+    </div>
+  </div>
+</div>
+
+<script src="js/sections.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,984 @@
+
+
+
+
+
+
+
+
+
+
+                                     /* Extra small devices (phones, 600px and down) */
+                                    @media only screen and (max-width: 600px) {
+
+                                      .container {
+                                        width: 100%;
+                                       /* margin: auto;*/
+                                      }
+
+                                      #sections {
+                                        position: relative;
+                                        display: inline-block;
+                                        width: 25%;
+                                        top: 0px;
+                                        z-index: 90;
+                                        padding-bottom: 200px;
+                                        word-wrap: break-word;
+                                      }
+
+                                      .faultsLegend{
+                                        opacity:0.0;
+                                      }
+
+                                      .depthLabel{
+                                        font-size:0.5rem;
+                                        font-weight:bold
+                                        text-anchor:end;
+                                      }
+
+                                    }
+
+
+
+                                    /* Small devices (portrait tablets and large phones, 600px and up) */
+                                    @media only screen and (min-width: 600px) {
+
+                                      .container {
+                                        width: 100%;
+                                        /*margin: auto;*/
+                                      }
+
+                                      #sections {
+                                        position: relative;
+                                        display: inline-block;;
+                                        width: 25%;
+                                        top: 0px;
+                                        z-index: 90;
+                                        padding-bottom: 200px;
+                                        word-wrap: break-word;
+                                      }
+
+                                      #sections .title {
+                                        font-family: 'Open Sans Condensed', sans-serif;
+                                        font-size: 0.8rem;
+                                        font-weight: bold;
+                                        margin-bottom: 2px;
+                                        color: #FFFFFF;
+                                        line-height: 1.0em;
+                                      }
+
+                                      .eventInformation{
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                        font-size:0.8rem;
+                                      }
+
+                                      .plateLabels{
+                                        font-family: 'Open Sans', sans-serif;
+                                        text-anchor:middle;
+                                        font-size:0.8rem;
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                      }
+
+                                      #boundaries-G{
+                                         opacity:1.0;                                  
+                                      }
+
+                                      .faultsLegend{
+                                        opacity:1.0;
+                                      }
+
+                                      .depthLabel{
+                                        font-size:0.5rem;
+                                        font-weight:bold
+                                        text-anchor:end;
+                                      }
+
+                                      #vis .title {
+                                        font-size:1.5rem;
+                                        fill: #D0D0D0;
+                                        text-anchor: middle;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-weight:500;
+                                      }
+
+                                    }
+
+
+
+
+
+                                    /* Medium devices (landscape tablets, 768px and up) */
+                                    @media only screen and (min-width: 768px) { 
+
+                                      .container {
+                                        width: 100%;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .histo.axis text{
+                                        fill:#FFF;
+                                        opacity : 1.0;
+                                        text-anchor:start;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .barcode.x.axis.major text,
+                                      .barcode.y.axis.major text{
+                                        fill:#FFF;
+                                        opacity : 1.0;
+                                        text-anchor:middle;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .barcode.x.axis.minor text{
+                                        fill:#FFF;
+                                        stroke:none;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #vis {
+                                        width:75%;
+                                        display: inline-block;
+                                        position: fixed;
+                                        top: 60px;
+                                        z-index: 1;
+                                        margin-left: 0;
+                                        clear: both;
+                                        margin-bottom: 10px;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #sections {
+                                        position: relative;
+                                        display: inline-block;
+                                        width: 25%;
+                                        top: 0px;
+                                        z-index: 90;
+                                        padding-bottom: 200px;
+                                        word-wrap: break-word;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #sections .title {
+                                        font-family: 'Open Sans Condensed', sans-serif;
+                                        font-size: 0.8rem;
+                                        font-weight: bold;
+                                        margin-bottom: 2px;
+                                        color: #FFFFFF;
+                                        line-height: 1.0em;
+                                      }
+
+                                      .step {
+                                        display: inline-block;
+                                        margin-bottom: 200px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-size: 1.0rem;
+                                        line-height: 1.0rem;
+                                        color: #00F;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .yAxisTitle.major{
+                                        text-anchor:start;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .counter{
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                        opacity:0.0;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .eventInformation{
+                                        font-family: 'Open Sans', sans-serif;
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                        font-size:0.8rem;
+                                      }
+
+                                      .plateLabels{
+                                        font-family: 'Open Sans', sans-serif;
+                                        text-anchor:middle;
+                                        font-size:0.8rem;
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                      }
+
+                                      #boundaries-G{
+                                         opacity:1.0;                                  
+                                      }
+
+                                      .faultsLegend{
+                                        opacity:1.0;
+                                      }
+
+                                      .depthLabel{
+                                        font-size:1.0rem;
+                                        font-weight:bold
+                                        text-anchor:end;
+                                      }
+
+                                      #vis .title {
+                                        font-size:1.5rem;
+                                        fill: #D0D0D0;
+                                        text-anchor: middle;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-weight:500;
+                                      }
+
+                                    }/* end Medium devices (landscape tablets, 768px and up) */
+
+
+
+
+
+                                    /* Medium devices (landscape tablets, 768px and up) */
+                                    @media only screen and (min-width: 768px){ 
+
+                                      .container {
+                                        width: 100%;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .histo.axis text{
+                                        fill:#FFF;
+                                        opacity : 1.0;
+                                        text-anchor:start;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .barcode.x.axis.major text,
+                                      .barcode.y.axis.major text{
+                                        fill:#FFF;
+                                        opacity : 1.0;
+                                        text-anchor:middle;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .barcode.x.axis.minor text{
+                                        fill:#FFF;
+                                        stroke:none;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #vis {
+                                        width:75%;
+                                        display: inline-block;
+                                        position: fixed;
+                                        top: 60px;
+                                        z-index: 1;
+                                        margin-left: 0;
+                                        clear: both;
+                                        margin-bottom: 10px;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #sections {
+                                        position: relative;
+                                        display: inline-block;
+                                        width: 25%;
+                                        top: 0px;
+                                        z-index: 90;
+                                        padding-bottom: 200px;
+                                        word-wrap: break-word;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #sections .title {
+                                        font-family: 'Open Sans Condensed', sans-serif;
+                                        font-size: 0.8rem;
+                                        font-weight: bold;
+                                        margin-bottom: 2px;
+                                        color: #FFFFFF;
+                                        line-height: 1.0em;
+                                      }
+
+                                      .step {
+                                        display: inline-block;
+                                        margin-bottom: 200px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-size: 1.0rem;
+                                        line-height: 1.0rem;
+                                        color: #767678;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .yAxisTitle.major{
+                                        text-anchor:start;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .counter{
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                        opacity:0.0;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .eventInformation{
+                                        font-family: 'Open Sans', sans-serif;
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                        font-size:0.8rem;
+                                      }
+
+                                      .plateLabels{
+                                        font-family: 'Open Sans', sans-serif;
+                                        text-anchor:middle;
+                                        font-size:0.8rem;
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                      }
+
+                                      #boundaries-G{
+                                         opacity:1.0;                                  
+                                      }
+
+                                      .faultsLegend{
+                                        opacity:1.0;
+                                      }
+
+                                      .depthLabel{
+                                        font-size:1.0rem;
+                                        font-weight:bold
+                                        text-anchor:end;
+                                      }
+
+                                      #vis .title {
+                                        font-size:1.5rem;
+                                        fill: #D0D0D0;
+                                        text-anchor: middle;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-weight:500;
+                                      }
+
+                                    }/* end Medium devices (landscape tablets, 768px and up) */
+
+
+
+
+
+                                    /* Large devices (laptops/desktops, 992px and up) */
+                                    @media only screen and (min-width: 992px){
+
+                                      .container {
+                                        width: 100%;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .histo.axis text{
+                                        fill:#FFF;
+                                        opacity : 1.0;
+                                        text-anchor:start;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                     /* .barcode.x.axis.major text,*/
+                                      .barcode.y.axis.major text{
+                                        fill:#00F;
+                                        opacity : 1.0;
+                                        text-anchor:middle;
+                                        font-size:1.25rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .barcode.x.axis.minor text{
+                                        fill:#FFF;
+                                        stroke:none;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #vis {
+                                        width:75%;
+                                        display: inline-block;
+                                        position: fixed;
+                                        top: 60px;
+                                        z-index: 1;
+                                        margin-left: 0;
+                                        clear: both;
+                                        margin-bottom: 10px;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #sections {
+                                        position: relative;
+                                        display: inline-block;
+                                        width: 25%;
+                                        top: 0px;
+                                        z-index: 90;
+                                        padding-bottom: 200px;
+                                        word-wrap: break-word;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #sections .title {
+                                        font-family: 'Open Sans Condensed', sans-serif;
+                                        font-size: 0.8rem;
+                                        font-weight: bold;
+                                        margin-bottom: 2px;
+                                        color: #FFFFFF;
+                                        line-height: 1.0em;
+                                      }
+
+                                      .step {
+                                        display:  inline-block;
+                                        margin-bottom: 200px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-size: /*14px*/ 1.0rem;
+                                        line-height: /*20px;*/ 1.25rem;
+                                        color: #767678;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .yAxisTitle.major text{
+                                        text-anchor:start;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .counter{
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                        opacity:0.0;
+                                        font-size:0.8rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .eventInformation{
+                                        font-family: 'Open Sans', sans-serif;
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                        font-size:0.8rem;
+                                      }
+
+                                      .plateLabels{
+                                        font-family: 'Open Sans', sans-serif;
+                                        text-anchor:middle;
+                                        font-size:0.8rem;
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                      }
+
+                                      #boundaries-G{
+                                         opacity:1.0;                                    
+                                      }
+
+                                      .faultsLegend{
+                                        opacity:1.0;
+                                      }
+
+                                      .depthLabel{
+                                        font-size:1.0rem;
+                                        font-weight:bold
+                                        text-anchor:end;
+                                      }
+
+                                      #vis .title {
+                                        font-size:2.0rem;
+                                        fill: #D0D0D0;
+                                        text-anchor: middle;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-weight:500;
+                                      }
+
+                                    } /* Large devices (laptops/desktops, 992px and up) */
+
+
+
+
+
+                                    /* end Extra large devices (large laptops and desktops, 1200px and up) */
+                                    @media only screen and (min-width: 1200px) {
+
+                                      .container {
+                                        width: 100%;
+                                        font-family: 'Open Sans', sans-serif;
+                                       /* margin: auto;*/
+                                      }
+
+                                      .histo.axis text{
+                                        fill:#FFF;
+                                        opacity : 1.0;
+                                        text-anchor:start;
+                                        font-size:1.25rem;
+                                      }
+
+                                      .barcode.x.axis.major .tick text{
+                                        fill:#FFF;
+                                        opacity : 1.0;
+                                        text-anchor:middle;
+                                        font-size:1.25rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .barcode.y.axis.major .tick text{
+                                        fill:#FFF;
+                                        opacity : 1.0;
+                                        text-anchor:middle;
+                                        font-size:1.25rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #yAxisTitle{
+                                        fill:#FFF;
+                                        text-anchor:start;
+                                        font-size:1.5rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .barcode.x.axis.minor text{
+                                        fill:#FFF;
+                                        stroke:none;
+                                        font-size:1.0rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #vis {
+                                        width:75%;
+                                        display: inline-block;
+                                        position: fixed;
+                                        top: 60px;
+                                        z-index: 1;
+                                        margin-left: 0;
+                                        clear: both;
+                                        margin-bottom: 10px;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #sections {
+                                        position: relative;
+                                        display: inline-block;
+                                        width: 25%;
+                                        top: 0px;
+                                        z-index: 90;
+                                        padding-bottom: 200px;
+                                        word-wrap: break-word;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      #sections .title {
+                                        font-family: 'Open Sans Condensed', sans-serif;
+                                        font-size: 2.0rem;
+                                        font-weight: bold;
+                                        margin-bottom: 2px;
+                                        color: #FFFFFF;
+                                        line-height: 1.0em;
+                                      }
+
+                                      .step {
+                                        display: inline-block;
+                                        margin-bottom: 200px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #767678;
+                                      }
+
+                                      .counter{
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                        opacity:0.0;
+                                        font-size:1.25rem;
+                                        font-family: 'Open Sans', sans-serif;
+                                      }
+
+                                      .eventInformation tspan{
+                                        font-family: 'Open Sans', sans-serif;
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                        font-size:1.50rem;
+                                        opacity:1.0;
+                                        font-weight:lighter;
+                                        dy:0.35em;
+                                      }
+
+                                      .plateLabels{
+                                        font-family: 'Open Sans', sans-serif;
+                                        text-anchor:middle;
+                                        font-size:1.0rem;
+                                        fill:#FFFFFF;
+                                        stroke:none;
+                                      }
+
+                                      #boundaries-G{
+                                        opacity:1.0;                                        
+                                      }
+
+                                      .faultsLegend{
+                                        opacity:1.0;
+                                      }
+
+                                      .depthLabel{
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-size:1.5rem;
+                                        font-weight:bold;
+                                        text-anchor:end;
+                                      }
+
+                                      #vis .title {
+                                        font-size:3.0rem;
+                                        fill: #D0D0D0;
+                                        text-anchor: middle;
+                                        font-family: 'Open Sans', sans-serif;
+                                        font-weight:500;
+                                      }
+
+                                     }/* end Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+
+.source.footnote{
+  fill:#FFFFFF;
+  stroke:none;
+  font-size:0.75rem;
+  font-weight:lighter;
+  text-anchor:end;
+}
+
+.epicentres.events{
+  pointer-events:none;
+}
+
+.plates{
+  display: inline;
+  stroke :#A0A0A0;
+  stroke-width:0.5;
+  stroke-linecap:round;
+  fill:none;
+  stroke-opacity:1.00;
+}
+
+
+
+.world.country{
+  stroke: #000000;
+  stroke-width:0.25;
+  fill: #FFFFFF;
+  opacity:0.33;
+}
+
+
+.boundaries{
+  fill:none;
+  stroke:#FFFFFF;
+  stroke-width:0.75px;
+  stroke-linecap:round;
+  opacity:1.0;
+  display:inline;
+}
+
+.boundaries.subduction,
+.faultLine.subduction{
+  fill:none;
+  stroke:#F00;
+  stroke-width:2.5px;
+  stroke-linecap:round;
+  opacity:1.0;
+  display:inline;
+}
+
+.boundaries.convergent,
+.faultLine.convergent{
+  fill:none;
+  stroke:#0F0;
+  stroke-width:2.5px;
+  stroke-linecap:round;
+  opacity:1.0;
+  display:inline;
+}
+
+.boundaries.strike-slip,
+.faultLine.strike-slip{
+  fill:none;
+  stroke:#00F;
+  stroke-width:2.5px;
+  stroke-linecap:round;
+  opacity:1.0;
+  display:inline;
+}
+
+
+
+.image.wave{
+  opacity:0.66;
+  xlink:href:'images/wave.svg';
+}
+
+
+
+body{
+
+  /*
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  */
+
+  background-color:#000000;
+  font-size:14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+#graphic {
+  padding-top: 60px;
+}
+
+
+label{
+  word-wrap: break-word;
+}
+
+#extra-space {
+  height: 700px;
+}
+/*
+#vis {
+  display: inline-block;
+  position: fixed;
+  top: 60px;
+  z-index: 1;
+  margin-left: 0;
+  clear: both;
+  margin-bottom: 10px;
+}*/
+
+/*
+
+#vis .title {
+  font-size:5.0rem;
+  fill: #D0D0D0;
+  text-anchor: middle;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+}*/
+
+#vis .sub-title {
+  font-size:5.0rem;
+  text-anchor: middle;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+  fill: #D0D0D0;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #FFF;
+  shape-rendering: crispEdges;
+}
+
+.highlight {
+  fill: #008080;
+  font-weight: bold;
+}
+
+.cough-arrow {
+  stroke: #000;
+  stroke-width: 4px;
+
+}
+
+
+.axis {
+  fill:#FFF;
+  font: 8px sans-serif;
+  opacity:1.0;
+}
+
+a, a:visited,
+a:active {
+  color: #444;
+  border: 0px solid #e0e0e0;
+  color:#FFFFFF;
+}
+/*
+.container {
+  max-width: 1500px;
+  margin: auto;
+}*/
+
+.button {
+  min-width: 130px;
+  padding: 4px 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid #FFFFFF;
+  background: #000;
+  text-decoration: none;
+}
+
+.button.active {
+  background: #FFFFFF;
+  color: #000;
+}
+
+.button.disabled{
+  cursor:no-drop;
+}
+
+
+
+
+#toolbar {
+  margin-top: 0px;
+  visibility: visible;
+}
+
+.year {
+  font-size: 10px;
+  font-weight:bold;
+  fill: #FFF;
+  cursor: default;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  -moz-border-radius:5px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+  opacity: .9;
+  color: black;
+  padding: 10px;
+  width: 300px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.tooltip .title {
+  font-size: 13px;
+}
+
+.tooltip .name {
+  font-weight:bold;
+}
+
+.footer {
+  text-align: center;
+}
+
+
+
+.eventInfo{
+  fill:#FFFFFF;
+  font-size:20px;
+}
+
+.eventInfo.furtherDetails{
+  fill:#FFFFFF;
+  font-size:14px;
+}
+
+
+
+    .annotation path {
+      stroke: #c4c4c4;
+      fill: none;
+    }
+
+    .annotation path.connector-arrow, 
+    .title text, .annotation text,
+    .annotation.callout.circle .annotation-subject path{
+      fill: #c4c4c4;
+    }
+    .annotation-note-bg {
+      fill: rgba(255, 255, 255, 0);
+    }
+
+    .annotation-note-title {
+      font-weight: bold;
+    }
+
+    .annotation.xythreshold {
+      cursor: move;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    text.hover {
+      font-size: .5em;
+    }/*
+
+    text.title {
+      font-size: 0.9em;
+    }*/
+
+
+.scroll.disabled{
+  opacity:0.25;
+  cursor:no-drop;
+}
+
+.scroll.button.enabled{
+  opacity:1.00;
+  cursor:pointer;
+}
+/*
+
+.tick text{
+    fill:#FFF;
+    opacity : 1.0;
+    text-anchor:middle;
+    font-size:12px;
+  }
+*/
+  .magnitudeLabels:hover{
+    cursor:pointer;
+  }
+
+  tspan{
+    font-size:1.00rem;
+  }
+/*
+  .enabled:hover{
+    cursor:pointer;
+  }*/
+
+  #highlight{
+    visibility: hidden;
+  }
+
+.stop-left {
+    stop-color: #1a9850;  
+}
+
+.stop-step1 {
+    stop-color: #fee08b;
+}
+.stop-step2 {
+    stop-color: #d73027;
+}
+
+/*
+'#1a9850', '#fee08b', '#d73027'
+*/
+
+.stop-right {
+    stop-color: #009688;  /* Teal */
+}
+
+.filled {
+    fill: url(#mainGradient);
+    stroke: url(#mainGradient);
+}
